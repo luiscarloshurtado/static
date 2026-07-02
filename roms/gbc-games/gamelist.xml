@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <gameList>
+        <game>
+          <path>./blastah.gb</path>
+          <name>Blastah</name>
+          <desc>Blastah is a small free GBC shoot&apos;em up game. It is mostly a quick game comedy was done in a few hours to take a part in a small game competition was organised for hobby GBC programmers.</desc>
+          <image>./blastah.png</image>
+          <rating>0</rating>
+          <releasedate>20010227T000000</releasedate>
+          <developer>Black Box</developer>
+          <publisher>HOMEBREW ROM</publisher>
+          <genre>Blastah</genre>
+          <players>1</players>
+      </game>
+        <game>
+          <path>./brickster.gbc</path>
+          <name>Brickster</name>
+          <desc>Arkanoid type of game for gameboy color.</desc>
+          <image>./brickster.png</image>
+          <rating>0</rating>
+          <releasedate>19990929T000000</releasedate>
+          <developer>Stephane Hockenhull</developer>
+          <publisher>HOMEBREW ROM</publisher>
+          <genre>Brickster</genre>
+          <players>1</players>
+      </game>
+        <game>
+          <path>./burly.gbc</path>
+          <name>Burly Bear vs. The Mean Foxes</name>
+          <desc>Here we have Burly Bear going around swiping at mean foxes, eating cookies, and moving from place to place once the foxes have been felled.</desc>
+          <image>./burly.png</image>
+          <rating>0</rating>
+          <releasedate>20120215T000000</releasedate>
+          <developer>Sebastian Mihai</developer>
+          <publisher>HOMEBREW ROM</publisher>
+          <genre>Burly Bear vs. The Mean Foxes</genre>
+          <players>1</players>
+      </game>
+        <game>
+          <path>./combatsoccer.gbc</path>
+          <name>Combat Soccer</name>
+          <desc>Combat Soccer is an intense game that somewhat looks like soccer. You control the top player. Your goal is to score 20 points against the bottom player. To assist you in your game, you are provided with a Rubber Rocket Gun. The Rockets can reflect the soccer ball in the other direction and temporarily make you opponent stop moving. Have Fun!</desc>
+          <image>./combatsoccer.png</image>
+          <rating>0</rating>
+          <releasedate>19991002T000000</releasedate>
+          <developer>Mike Kasprzak</developer>
+          <publisher>HOMEBREW ROM</publisher>
+          <genre>Combat Soccer</genre>
+          <players>1</players>
+      </game>
+        <game>
+          <path>./geometrix.gbc</path>
+          <name>Geometrix</name>
+          <desc>This is a very simple puzzle game in which the objective is to create rows or columns of 3 or more of the same geometric form. Each row or column of 3 is worth 1 point, a line of 4 elements is considered to be 2 lines of 3 together, so it&apos;s worth 2 points, etc. If removing a line allows another one to be removed, the combo counter increases and the score of that removal is multiplied by it. The combo counter may increase up to 9. As soon as new geometric forms come into the screen from the top, or the chain stops, the combo counter will go back to 1.</desc>
+          <image>./geometrix.png</image>
+          <rating>0</rating>
+          <releasedate>20150312T000000</releasedate>
+          <developer>AntonioND/SkyLyrac (Antonio Nino Diaz)</developer>
+          <publisher>HOMEBREW ROM</publisher>
+          <genre>Geometrix</genre>
+          <players>1</players>
+      </game>
+       <game>
+          <path>./initiald.gbc</path>
+          <name>InitialD</name>
+          <desc>Takumi has to deliver Ramen! Take it from the restaurant and deliver it to the customers before times runs out! Beware of cyclists!  Controls: Move: D-pad; Pick and leave Ramen: A; Change Song: Select</desc>
+          <image>./initiald.png</image>
+          <rating>0</rating>
+          <releasedate>20180929T000000</releasedate>
+          <developer>ggracia10</developer>
+          <publisher>HOMEBREW ROM</publisher>
+          <genre>InitialD</genre>
+          <players>1</players>
+       </game>
+        <game>
+          <path>./klondike.gbc</path>
+          <name>Klondike</name>
+          <desc>Card game.. D-pad: controls mouse pointer; A: Action button, select a card (dot shows which card is active) then move pointer to another card and press &apos;A&apos; again to place the active card if the move is legal; B: Moves the card under the pointer to the goal piles if the move is legal; START: Pauses the game, and allows the player to change the game style (whether to draw 1 or 3 cards) SELECT+DOWN: Redeals the cards.</desc>
+          <image>./klondike.png</image>
+          <rating>0</rating>
+          <releasedate>20010325T000000</releasedate>
+          <developer>Harold Toler</developer>
+          <publisher>HOMEBREW ROM</publisher>
+          <genre>Klondike</genre>
+          <players>1</players>
+      </game>
+        <game>
+          <path>./pokedamon.gbc</path>
+          <name>Poke Da Mon</name>
+          <desc>Poke Da Mon is an action packed game of poking (!?) for the Nintendo Gameboy and Gameboy Color console. Armed with a razor sharp poking stick, your goal is to poke the computer controlled opponent as many times as possible in under 99 seconds. This may sound simple, but your not the only one who has a stick. :) Controls are Simple: Use the pad to move your character around. To deploy the poking stick, press the A button. To Pause the game press the Start button.</desc>
+          <image>./pokedamon.png</image>
+          <rating>0</rating>
+          <releasedate>19991004T000000</releasedate>
+          <developer>Mike Kasprzak</developer>
+          <publisher>HOMEBREW ROM</publisher>
+          <genre>Poke Da Mon</genre>
+          <players>1</players>
+      </game>
+       <game>
+          <path>./ucity.gbc</path>
+          <name>uCity</name>
+          <desc>This is uCity (pronounced &apos;micro-city&apos;), the open-source city-building game for Game Boy Color.</desc>
+          <image>./ucity.png</image>
+          <rating>0</rating>
+          <releasedate>20180131T000000</releasedate>
+          <developer>AntonioND/SkyLyrac (Antonio Nino Diaz)</developer>
+          <publisher>HOMEBREW ROM</publisher>
+          <genre>uCity</genre>
+          <players>1</players>
+      </game>      
+  </gameList>
