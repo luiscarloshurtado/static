@@ -1,0 +1,123 @@
+El Hobbit (Vah-ka’s Cut)
+by Mojon Twins
+2013/01/03
+ 
+
+Diseño / Design: Anjuel & na_th_an
+Gráficos / GFX: Anjuel
+Código / Code: na_th_an
+1-bit sfx: Shiru
+
+Powered by La Churrera 4.5 by The Mojon Twins and splib2 by Alvin Albrecht.
+Uses aPPack decompressor by dwedit, adapted by Utopian & optimized by Metalbrain
+Music tracks composed in Beepola
+Juego participante en el concurso «El Hobbit» de Bytemaníacos (link).
+
+Colección Pretujao, vol #11.
+Instrucciones / Instructions
+
+Bilbo es un hobbit, que es algo así como el tío ese de tu clase que era chico y que corría una jartá. Un día estaba en su casa comiéndose un tico-tico de Sandía y recibió la llamada de Gandalf, un viejo raro que, además de mago tipo merlín, trabajaba de profesor gay en Harry Potter. El viejo le dice que hay un tesoraco de la hostia guardado por el terrible dragón rosa Smaug, pero que no sabe como se abre la cueva donde está guardado. Eso nada más que lo saben los enanos, que son unos señores bajitos con barba, en total trece, que andan por ahí por el bojque. En la cueva, además, hay un tío calvo enfadao que se llama Gollum, y se guarda un anillo que si te lo pones te haces invisible un ratito (y, por tanto, los monstruos no te matan) pero que marea.
+
+En El Hobbit (Vahka’s Cut) tu misión es ayudar a Bilbo a encontrar el tesoro de Smaug sin morirse. Para ello, tendrás que hacer algunas cosas y tal en un escenario chulo de la hostia. Para moverte, puedes usar las teclas OPQA, o el joystick.
+
+Hay cosas con las que se puede interactuar (para hablar con la gente, o para examinar algo, o para coger el anillo). Para ello tienes que pulsar SPACE o FIRE en el joystick. Cuando tengas el anillo y te quieras poner invisible, pulsa SPACE/FIRE también… Pero cuidao, que da mareo y el efecto dura poco. Te va a hacer falta porque Gollum se mete por los pasillos estrechos y sin la invisibilidad no vas a poder pasar.
+
+ 
+
+Bilbo is a Hobbit, which is somehow like that small and skinny guy you remember from school which could run very fast. One nice day he was relaxing at home and got a call from Gandalf, an odd old chap who worked as a magician (in the good ol’ Merlin fashion) and as the gay professor in Harry Potter. The old man tells you about a big treasure hidden in a cave and guarded by Smaug, the terrible pink dragon – the problem being that he doesn’t really know how to open the cave to get it. That’s something which only the thirteen dwarves (dirty short people with long beards) know how to do; they usually wander around the forest. Besides, inside the cave there’s a bald grumpy man called Gollum who has hidden a ring somewhere. That ring is rather special, ‘cause if you put it on you become invisible (thus unkillable by enemies) but feel a bit dizzy.
+
+In The Hobbit (Vahka’s cut) your mission is to help Bilbo find Smaug‘s treasure without dying in the attempt. To do so, you’ll have to perform some tasks (hints already given). To move around you use your OPQA keys or the joystick.
+
+To talk to people / examine stuff / pick up stuff, etcetera, just press SPACE of FIRE in the joystick. When you get the ring (hint, hint!) you can put it on by pressing SPACE / FIRE as well. Beware, the effects are short and you will get a bit dizzy. You’ll need this ‘cause Gollums dwells in very thin corridors and you won’t be able to get past him without being invisible.
+
+ 
+FX No macuerdo / FX Can’t remember
+
+Los autores leyeron el libro hace tantos años que sólo recuerdan levemente el argumento. Pero eso no importa, así este juego es el más original.
+The authors of this game read the book so many years ago that they can’t remember the plot very well. But that’s not a problem: that has made this game more original.
+
+http://www.mojontwins.com/juegos_mojonos/el-hobbit-vahkas-cut/
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+http://www.mojontwins.com/licencia-mt/
+
+
+Licencia
+A continuación os indicamos a qué tenéis que ateneros al usar MK2 o cualquiera de nuestros engines (salvo MK1/La Churrera – Para la licencia de este producto consultar su página http://www.mojontwins.com/juegos_mojonos/la-churrera/) o códigos fuentes, o al utilizar gráficos, ideas, argumentos, personajes, músicas, sonidos, ilustraciones, etc… es decir: TODA NUESTRA OBRA CREATIVA. Gracias a nuestro amigo Marco Fernández por la traducción al inglés.
+
+Todo el contenido de la web, toda nuestra obra creativa, incluido el código fuente está bajo licencia Creative Commons 3.0 “by-nc-ca”, o sea, “Reconocimiento-NoComercial-CompartirIgual 3.0 Unported (CC BY-NC-SA 3.0)”
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es_ES
+
+Esto significa que eres libre de:
+
+– Copiar, distribuir y comunicar públicamente la obra.
+– Transformar la obra.
+– Crear productos derivados de la obra.
+
+Bajo las siguientes condiciones:
+
+Reconocimiento — Debes reconocer los créditos de la obra de la manera especificada por los Mojon Twins (pero no de una manera que sugiera que tiene su apoyo o apoyan el uso que hace de su obra). En este caso, sólo te pedimos que incluyas el texto “Powered by La Churrera” o “Powered by MK2” (según aplique) o incluyas el logo que incluimos en el archivo logo.png en la pantalla de carga y la portada del güego.
+
+No comercial — No puede utilizar esta obra para fines comerciales.
+
+Compartir bajo la misma licencia — Si altera o transforma esta obra, o genera una obra derivada, sólo puede distribuir la obra generada bajo una licencia idéntica a ésta.
+
+Entendiendo que:
+
+Renuncia — Alguna de estas condiciones puede no aplicarse si se obtiene el permiso explícito de los Mojon Twins.
+
+Aviso — Al reutilizar o distribuir la obra, tiene que dejar bien claro los términos de la licencia de esta obra.
+
+En resumen
+
+– Los güegos que hagan deben lanzarse bajo una licencia CC equivalente. Si quieres lanzar los güegos bajo otro tipo de licencia, debes hablar con nosotros y pedir permiso. Esto incluye especialmente la elaboración de copias físicas (ver más abajo).
+
+– Debes incluir “Powered by la Churrera” o “Powered by MK2” o “Powered by NOMBRE-DEL-ENGINE” según aplique, o el logo correspondiente en pantalla de carga y portada. No te cuesta ningún trabajo y nos beneficiamos todos.
+
+Sobre las copias físicas
+
+– Copias físicas privadas: Puedes grabar un juego en una cinta, cd, dvd, disquete o cartucho para tu disfrute propio.
+– Copias físicas promocionales: Puedes grabar un juego en una cinta, cd, dvd, disquete o cartucho y regalarlo a tus amigos corriendo tú personalmente con todos los gastos.
+– Copias físicas para vender (incluye recompensas en crowdfundings y cualquier otra actividad que implique un intercambio económico): Depende del producto pero, en cualquier caso, lo mejor es preguntar.
+License
+
+You must observe the terms below when using MK2 or any of our engines or source code (save for MK1/la Churrera; read more at http://www.mojontwins.com/juegos_mojonos/la-churrera-english/ ), or when using our graphics, ideas, storylines, characters, music, sounds, illustrations, etc., i.e. ANY OF OUR CREATIVE WORK
+
+All the content on this site, and all of our creative work, including source code, are licensed under Creative Commons 3.0 Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0.)
+
+https://creativecommons.org/licenses/by-nc-sa/3.0/
+
+This means you can freely:
+
+– Copy, distribute and transmit our work.
+– Transform our work.
+– Create products derived from our work.
+
+You may do so under the following terms:
+
+Attribution — You must attribute the work in the manner specified by the Mojón Twins (but not in any way that suggests that they endorse you or your use of the work.) In this case, we only ask that you include the text “Powered by La Churrera” or “Powered by MK2” (as applicable) or that you include the logo included in the file logo.png in the game’s loading screen and cover art.
+
+NonCommercial — You may not use this material for commercial purposes.
+
+Share Alike — If you alter or transform this work, or generate any work derived from it, you can only distribute your derived work under a license identical to this one.
+
+Understanding that:
+
+Disclaimer — Some of these conditions may not be applicable if you obtain explicit permission from the Mojón Twins.
+
+Notice — When reusing or distributing the work, you need to clearly specify the terms in its license.
+
+In a nutshell
+
+– The games you make must be released under an equivalent CC license. If you want to release your games under a different kind of license, you must contact us to get permission. This applies specially to the manufacturing of physical copies (see below.)
+
+– You must include “Powered by la Churrera” or “Powered by MK2” or “Powered by ENGINE-NAME” as applicable, or the corresponding logo on the loading screen and cover art. This is easy for you, and will benefit all of us.
+
+About physical copies
+
+– Private physical copies: You may record a game on tape, CD, DVD, floppy disk or cartridge for your own personal use.
+– Promotional physical copies: You may record a game on tape, CD, DVD, floppy disk or cartridge to give away to your friends paying for all expenses yourself.
