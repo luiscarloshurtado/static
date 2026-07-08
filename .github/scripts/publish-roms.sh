@@ -13,7 +13,17 @@ if [[ ! -d "roms" ]]; then
 fi
 
 # Detectar archivos modificados
-CHANGED=$(find roms -type f | sort)
+if [[ "$BEFORE" == "0000000000000000000000000000000000000000" ]]; then
+
+    echo "Primer push detectado."
+
+    CHANGED=$(find roms -type f | sort)
+
+else
+
+    CHANGED=$(git diff --name-only "$BEFORE" "$AFTER")
+
+fi
 
 # Salir si no hay cambios
 if [[ -z "$CHANGED" ]]; then
