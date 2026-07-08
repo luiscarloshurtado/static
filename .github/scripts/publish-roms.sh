@@ -13,8 +13,6 @@ if [[ ! -d "roms" ]]; then
 fi
 
 # Detectar archivos modificados
-echo "Modo forzado: procesando todas las ROMs."
-
 CHANGED=$(find roms -type f | sort)
 
 # Salir si no hay cambios
@@ -28,6 +26,9 @@ echo "Archivos detectados:"
 echo "--------------------"
 echo "$CHANGED"
 
+# Caché de releases ya comprobados/creados
+declare -A RELEASE_READY
+
 while IFS= read -r FILE
 do
 
@@ -35,7 +36,6 @@ do
     [[ "$FILE" == roms/* ]] || continue
 
     SYSTEM=$(cut -d'/' -f2 <<< "$FILE")
-
     RELEASE="roms-$SYSTEM"
 
     echo ""
@@ -45,14 +45,21 @@ do
     echo "Archivo : $FILE"
     echo "=============================="
 
-    if ! gh release view "$RELEASE" >/dev/null 2>&1
-    then
+    # Solo comprobar el release una vez por sistema
+    if [[ -z "${RELEASE_READY[$RELEASE]}" ]]; then
 
-        echo "Creando Release '$RELEASE'..."
+        if gh release view "$RELEASE" >/dev/null 2>&1
+        then
+            echo "Release existente."
+        else
+            echo "Creando Release '$RELEASE'..."
 
-        gh release create "$RELEASE" \
-            --title "ROMs $SYSTEM" \
-            --notes "ROMs de $SYSTEM"
+            gh release create "$RELEASE" \
+                --title "ROMs $SYSTEM" \
+                --notes "ROMs de $SYSTEM"
+        fi
+
+        RELEASE_READY["$RELEASE"]=1
 
     fi
 
