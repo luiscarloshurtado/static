@@ -1,3 +1,52 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bd3e8fd4872788bce4fa9a317731be43f69c7aec79e43df082236d89ce06327e
-size 1175
+name: Publish ROMs
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  publish-roms:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository (with Git LFS)
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 0
+
+      - name: Pull Git LFS files
+        run: |
+          git lfs install
+          git lfs pull
+
+      - name: Verify ROMs
+        run: |
+          echo "Contenido de roms:"
+          find roms -type f -exec ls -lh {} \;
+
+      - name: Create Release if it doesn't exist
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if ! gh release view roms >/dev/null 2>&1; then
+            gh release create roms \
+              --title "ROMs" \
+              --notes "Repositorio de ROMs"
+          fi
+
+      - name: Upload ROMs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          find roms -type f | while read file; do
+            echo "Uploading $file"
+            gh release upload roms "$file" --clobber
+          done
+
+      - name: Finished
+        run: echo "Todos los ROMs fueron publicados correctamente."
