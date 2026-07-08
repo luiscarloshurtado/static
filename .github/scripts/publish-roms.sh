@@ -2,6 +2,8 @@
 
 set -eo pipefail
 
+FORCE_FULL_UPLOAD=false
+
 # Validar variables requeridas
 : "${BEFORE:?La variable BEFORE no está definida}"
 : "${AFTER:?La variable AFTER no está definida}"
@@ -13,7 +15,13 @@ if [[ ! -d "roms" ]]; then
 fi
 
 # Detectar archivos modificados
-if [[ "$BEFORE" == "0000000000000000000000000000000000000000" ]]; then
+if [[ "$FORCE_FULL_UPLOAD" == "true" ]]; then
+
+    echo "Modo forzado: procesando todas las ROMs."
+
+    CHANGED=$(find roms -type f | sort)
+
+elif [[ "$BEFORE" == "0000000000000000000000000000000000000000" ]]; then
 
     echo "Primer push detectado."
 
