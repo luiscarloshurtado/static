@@ -2,28 +2,39 @@
 
 set -eo pipefail
 
-if [[ "$BEFORE" == "0000000000000000000000000000000000000000" ]]; then
-    echo "Primer push detectado."
-    CHANGED=$(find roms -type f)
-else
-    CHANGED=$(git diff --name-only "$BEFORE" "$AFTER")
+# Validar variables requeridas
+: "${BEFORE:?La variable BEFORE no está definida}"
+: "${AFTER:?La variable AFTER no está definida}"
+
+# Verificar que exista la carpeta de ROMs
+if [[ ! -d "roms" ]]; then
+    echo "La carpeta 'roms' no existe. No hay nada para publicar."
+    exit 0
 fi
 
+# Detectar archivos modificados
+echo "Modo forzado: procesando todas las ROMs."
+
+CHANGED=$(find roms -type f | sort)
+
+# Salir si no hay cambios
 if [[ -z "$CHANGED" ]]; then
     echo "No hay ROMs nuevas."
     exit 0
 fi
 
+echo ""
+echo "Archivos detectados:"
+echo "--------------------"
 echo "$CHANGED"
 
 while IFS= read -r FILE
 do
 
     [[ -f "$FILE" ]] || continue
-
     [[ "$FILE" == roms/* ]] || continue
 
-    SYSTEM=$(echo "$FILE" | cut -d'/' -f2)
+    SYSTEM=$(cut -d'/' -f2 <<< "$FILE")
 
     RELEASE="roms-$SYSTEM"
 
@@ -37,7 +48,7 @@ do
     if ! gh release view "$RELEASE" >/dev/null 2>&1
     then
 
-        echo "Creando Release $RELEASE..."
+        echo "Creando Release '$RELEASE'..."
 
         gh release create "$RELEASE" \
             --title "ROMs $SYSTEM" \
@@ -45,12 +56,16 @@ do
 
     fi
 
-    echo "Subiendo..."
+    echo "Subiendo archivo..."
 
-    gh release upload "$RELEASE" "$FILE" --clobber || {
-
-        echo "Error subiendo $FILE"
-
-    }
+    if gh release upload "$RELEASE" "$FILE" --clobber
+    then
+        echo "✓ Subido correctamente."
+    else
+        echo "✗ Error subiendo '$FILE'."
+    fi
 
 done <<< "$CHANGED"
+
+echo ""
+echo "Proceso finalizado."
