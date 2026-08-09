@@ -1,7 +1,0 @@
-title: cyler
-version: 0.4
-coded by: gener gabasa
-
-controls:
-  d-pad = move up/down/left/right
-  a = shoot
