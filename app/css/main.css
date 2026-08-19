@@ -1,0 +1,4 @@
+:root {
+  --gap: 1rem;
+  --rounded-corners: calc(var(--gap, 1rem) * 1.5);
+}
