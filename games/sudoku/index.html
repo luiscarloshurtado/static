@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Sudoku — fill the 9×9 grid with numbers 1-9! Part of GameBox.">
+    <meta name="theme-color" content="#0f1117">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../code-panel.css">
+    <title>Sudoku — GameBox</title>
+</head>
+<body>
+    <a href="#game" class="skip-link">Skip to game</a>
+    <a href="../" class="back-link" aria-label="Back to GameBox hub">← Back to GameBox</a>
+    <div class="game-shell sudoku-shell" id="game">
+        <h1>Sudoku</h1>
+        <div class="gb-selector" id="diff-selector" role="group" aria-label="Difficulty">
+            <button class="gb-btn active" data-diff="easy">Easy</button>
+            <button class="gb-btn" data-diff="medium">Medium</button>
+            <button class="gb-btn" data-diff="hard">Hard</button>
+        </div>
+        <div class="sudoku-board" id="board"></div>
+        <div class="sudoku-numpad" id="numpad"></div>
+        <p class="gb-status" id="message">&nbsp;</p>
+        <button class="gb-btn gb-btn-solid" id="new-game-btn">New Puzzle</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="../code-panel.js"></script>
+</body>
+</html>

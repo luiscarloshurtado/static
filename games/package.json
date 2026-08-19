@@ -1,0 +1,24 @@
+{
+  "name": "gamebox",
+  "version": "1.0.0",
+  "description": "A collection of classic browser games built with vanilla JavaScript",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sai-Uttej-R/GameBox.git"
+  },
+  "keywords": [
+    "games",
+    "javascript",
+    "beginner",
+    "open-source",
+    "browser-games"
+  ],
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --ext .js"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1"
+  }
+}

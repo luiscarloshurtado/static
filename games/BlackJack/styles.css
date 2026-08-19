@@ -1,0 +1,21 @@
+/* BlackJack — Game-specific styles */
+
+.bj-cards {
+    font-size: 1.4rem;
+    letter-spacing: 0.15rem;
+    margin: 0.6rem 0;
+    color: var(--gb-text);
+}
+
+.bj-sum {
+    font-size: 1.1rem;
+    color: var(--gb-text-muted);
+    margin-bottom: 1rem;
+}
+
+.bj-actions {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}

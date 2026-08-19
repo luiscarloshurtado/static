@@ -1,0 +1,50 @@
+/* Typing Speed Test — Styles */
+.typing-shell {
+    max-width: 650px;
+}
+
+.text-display {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--gb-border);
+    border-radius: var(--gb-radius-sm);
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: left;
+    min-height: 120px;
+    margin-bottom: 1rem;
+    color: var(--gb-text-muted);
+    user-select: none;
+}
+
+.text-display .correct {
+    color: var(--gb-success);
+}
+
+.text-display .incorrect {
+    color: var(--gb-danger);
+    text-decoration: underline;
+}
+
+.text-display .current {
+    background: rgba(56, 178, 172, 0.25);
+    border-radius: 2px;
+    padding: 0 1px;
+}
+
+.typing-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--gb-border);
+    border-radius: var(--gb-radius-sm);
+    background: var(--gb-surface);
+    color: var(--gb-text);
+    font-size: 1rem;
+    font-family: var(--gb-font);
+    outline: none;
+    transition: border-color var(--gb-transition);
+}
+
+.typing-input:focus {
+    border-color: var(--gb-accent);
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Tic-Tac-Toe online — classic X and O game. Challenge a friend or the computer AI.">
+    <meta name="theme-color" content="#0f1117">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../code-panel.css">
+    <title>Tic Tac Toe — GameBox</title>
+</head>
+<body>
+    <a href="../index.html" class="back-link">← Back to GameBox</a>
+    <div class="game-shell">
+        <h1>Tic Tac Toe</h1>
+        <div id="mode-selector" class="gb-selector">
+            <button class="gb-btn active" data-mode="pvp">2 Player</button>
+            <button class="gb-btn" data-mode="ai">vs Computer</button>
+        </div>
+        <div class="board" id="board"></div>
+        <p id="turn" class="gb-status mt-2">Player X's turn</p>
+        <div id="playerScores" class="gb-scoreboard">
+            <p>Player X: <span id="playerXScore">0</span></p>
+            <p>Player O: <span id="playerOScore">0</span></p>
+        </div>        
+    </div>
+
+    <!-- Winner Pop-up Modal -->
+    <div id="winnerModal" class="gb-modal" role="dialog" aria-modal="true" aria-labelledby="winnerTitle" tabindex="-1">
+        <div class="gb-modal-content">
+            <h2 id="winnerTitle">Winner!</h2>
+            <p id="winnerText"></p>
+            <button id="playAgainBtn" class="gb-btn-solid">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="../code-panel.js"></script>
+</body>
+</html>

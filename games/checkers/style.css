@@ -1,0 +1,13 @@
+.checkers-shell{max-width:460px}
+.checkers-board{display:inline-grid;grid-template-columns:repeat(8,1fr);border:2px solid var(--gb-border);border-radius:var(--gb-radius-sm);overflow:hidden;width:100%;box-sizing:border-box;margin-bottom:1rem}
+.ck-cell{aspect-ratio:1;display:flex;align-items:center;justify-content:center;position:relative}
+.ck-cell.light{background:#3b4261}
+.ck-cell.dark{background:#252942}
+.ck-cell.highlight{background:rgba(56,178,172,.25)}
+.ck-piece{width:70%;height:70%;border-radius:50%;cursor:pointer;position:relative;transition:transform .15s}
+.ck-piece:hover{transform:scale(1.1)}
+.ck-piece.red{background:radial-gradient(circle at 35% 35%,#ff8a8a,#e53e3e);box-shadow:0 2px 6px rgba(229,62,62,.4)}
+.ck-piece.black{background:radial-gradient(circle at 35% 35%,#718096,#2d3748);box-shadow:0 2px 6px rgba(45,55,72,.6)}
+.ck-piece.selected{box-shadow:0 0 0 3px var(--gb-accent),0 2px 8px rgba(56,178,172,.5);transform:scale(1.1)}
+.ck-piece.king::after{content:'♛';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:.9em;color:rgba(255,255,255,.85)}
+@media(max-width:400px){.ck-piece.king::after{font-size:.7em}}

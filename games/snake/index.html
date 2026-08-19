@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Snake — guide the snake to eat food and grow longer without hitting the walls or yourself.">
+    <meta name="theme-color" content="#0f1117">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../code-panel.css">
+    <title>Snake — GameBox</title>
+</head>
+<body>
+    <a href="../index.html" class="back-link">← Back to GameBox</a>
+    <div class="game-shell">
+        <h1>Snake</h1>
+        <div id="difficulty-selector" class="gb-selector">
+            <button class="gb-btn active" data-speed="150">Easy</button>
+            <button class="gb-btn" data-speed="100">Medium</button>
+            <button class="gb-btn" data-speed="60">Hard</button>
+        </div>
+        <canvas id="game-canvas" width="400" height="400"></canvas>
+        <p id="score" class="gb-status mt-1">Score: 0</p>
+        <p id="high-score" class="gb-status">Best: 0</p>
+        <button id="start-btn" class="gb-btn-solid mt-2">Start Game</button>
+        <p class="control-hint mt-1">Use arrow keys or WASD to move</p>
+    </div>
+    <script src="script.js"></script>
+    <script src="../code-panel.js"></script>
+</body>
+</html>

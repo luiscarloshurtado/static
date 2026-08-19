@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Hangman — guess the hidden word letter by letter before you run out of chances.">
+    <meta name="theme-color" content="#0f1117">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../code-panel.css">
+    <title>Hangman — GameBox</title>
+</head>
+<body>
+    <a href="../index.html" class="back-link">← Back to GameBox</a>
+    <div class="game-shell">
+        <h1>Hangman Game</h1>
+
+        <div id="difficulty-selector" class="gb-selector">
+            <button class="gb-btn active" data-diff="easy">Easy</button>
+            <button class="gb-btn" data-diff="medium">Medium</button>
+            <button class="gb-btn" data-diff="hard">Hard</button>
+        </div>
+
+        <div id="hangman-figure" class="hangman-figure"></div>
+        <div id="word-display" class="word-display"></div>
+        <div id="alphabet" class="alphabet-container"></div>
+        <p class="keyboard-hint">💡 You can also type letters on your keyboard!</p>
+        <button id="hint-btn" class="gb-btn-solid mt-2">Hint</button>
+        <div id="scoreboard" class="gb-scoreboard mt-2">
+            <p>Wins: <span id="wins">0</span></p>
+            <p>Losses: <span id="losses">0</span></p>
+        </div>
+        <div id="win-modal" class="gb-modal" role="dialog" aria-modal="true" aria-labelledby="winTitle" tabindex="-1">
+            <div class="gb-modal-content">
+                <span class="close">&times;</span>
+                <h2 id="winTitle">Congratulations!</h2>
+                <p>You won the game!</p>
+                <button id="new-game-btn" class="gb-btn-solid">New Game</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="../code-panel.js"></script>
+</body>
+</html>

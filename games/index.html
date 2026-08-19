@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GameBox — A collection of classic browser games built with vanilla JavaScript. Play Tic-Tac-Toe, Hangman, Memory Match, and more — free, open source, no installs.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="GameBox — Classic Browser Games">
+    <meta property="og:description" content="Play 19 classic games right in your browser — free, open source, no installs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saiuttejr.github.io/GameBox/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="GameBox — Classic Browser Games">
+    <meta name="twitter:description" content="Play 19 classic games right in your browser — free, open source, no installs.">
+
+    <!-- Theme & Icons -->
+    <meta name="theme-color" content="#0f1117">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>GameBox — Classic Browser Games</title>
+</head>
+
+<body>
+    <!-- Skip link for accessibility -->
+    <a href="#games" class="skip-link">Skip to games</a>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">🎮 GameBox</h1>
+            <p class="hero-subtitle">A collection of classic browser games built with vanilla JavaScript.<br>Play, learn, and contribute!</p>
+            <a href="#games" class="hero-cta">Explore Games ↓</a>
+        </div>
+    </header>
+
+    <!-- Games Section -->
+    <main>
+        <section id="games" class="games-section">
+            <h2 class="section-title">Games</h2>
+            <p class="section-desc">Click any card to start playing. All games run in your browser — no installs needed.</p>
+
+            <!-- Search & Filter -->
+            <div class="filter-bar" role="search" aria-label="Filter games">
+                <input type="text" id="game-search" class="search-input" placeholder="Search games..." autocomplete="off" aria-label="Search games by name or description">
+                <div class="filter-tags" role="group" aria-label="Category filters">
+                    <button class="filter-tag active" data-filter="all" aria-pressed="true">All</button>
+                    <button class="filter-tag" data-filter="Solo" aria-pressed="false">Solo</button>
+                    <button class="filter-tag" data-filter="2 Player" aria-pressed="false">2 Player</button>
+                    <button class="filter-tag" data-filter="vs Computer" aria-pressed="false">vs Computer</button>
+                </div>
+            </div>
+
+            <p id="no-results" class="no-results" hidden aria-live="polite">No games match your search.</p>
+            <div class="game-grid" role="list">
+
+                <a href="tic-tac-toe/index.html" class="game-card" role="listitem">
+                    <span class="game-icon">❌⭕</span>
+                    <h3>Tic-Tac-Toe</h3>
+                    <p class="game-desc">The classic X and O game. Challenge a friend!</p>
+                    <span class="game-tag">2 Player</span>
+                </a>
+
+                <a href="hangman/index.html" class="game-card" role="listitem">
+                    <span class="game-icon">🔤</span>
+                    <h3>Hangman</h3>
+                    <p class="game-desc">Guess the hidden word letter by letter before you run out of chances.</p>
+                    <span class="game-tag">Solo</span>
+                </a>
+
+                <a href="rock-paper-scissors/index.html" class="game-card" role="listitem">
+                    <span class="game-icon">✊✋✌️</span>
+                    <h3>Rock, Paper, Scissors</h3>
+                    <p class="game-desc">The timeless hand game — now against the computer.</p>
+                    <span class="game-tag">vs Computer</span>
+                </a>
+
+                <a href="memory-match/index.html" class="game-card" role="listitem">
+                    <span class="game-icon">🃏</span>
+                    <h3>Memory Match</h3>
+                    <p class="game-desc">Flip cards and find matching pairs. Train your memory!</p>
+                    <span class="game-tag">Solo</span>
+                </a>
+
+                <a href="simon-game/index.html" class="game-card" role="listitem">
+                    <span class="game-icon">🟢🔴🟡🔵</span>
+                    <h3>Simon Game</h3>
+                    <p class="game-desc">Repeat the color sequence. How far can you go?</p>
+                    <span class="game-tag">Solo</span>
+                </a>
+
+                <a href="BlackJack/index.html" class="game-card" role="listitem">
+                    <span class="game-icon">🃑</span>
+                    <h3>BlackJack</h3>
+                    <p class="game-desc">Try to get as close to 21 as possible without going over.</p>
+                    <span class="game-tag">Solo</span>
+                </a>
+
+                <a href="snake/index.html" class="game-card" role="listitem">
+                    <span class="game-icon">🐍</span>
+                    <h3>Snake</h3>
+                    <p class="game-desc">Guide the snake to eat food and grow — don't hit the walls or yourself!</p>
+                    <span class="game-tag">Solo</span>
+                </a>
+
+                <a href="minesweeper/index.html" class="game-card" role="listitem">
+                    <span class="game-icon">💣</span>
+                    <h3>Minesweeper</h3>
+                    <p class="game-desc">Uncover cells without detonating any mines. Flag the dangers!</p>
+                    <span class="game-tag">Solo</span>
+                </a>
+
+                <a href="whack-a-mole/index.html" class="game-card" role="listitem">
+                    <span class="game-icon">🔨</span>
+                    <h3>Whack-a-Mole</h3>
+                    <p class="game-desc">Whack as many moles as you can before time runs out!</p>
+                    <span class="game-tag">Solo</span>
+                </a>
+
+                <a href="typing-test/index.html" class="game-card" role="listitem">
+                    <span class="game-icon">⌨️</span>
+                    <h3>Typing Speed Test</h3>
+                    <p class="game-desc">Test your typing speed and accuracy with timed challenges.</p>
+                    <span class="game-tag">Solo</span>
+                </a>
+
+                <a href="connect-four/index.html" class="game-card" role="listitem">
+                    <span class="game-icon">🔴🟡</span>
+                    <h3>Connect Four</h3>
+                    <p class="game-desc">Drop discs to connect four in a row — play vs a friend or the computer.</p>
+                    <span class="game-tag">2 Player</span>
+                </a>
+
+                <a href="2048/index.html" class="game-card" role="listitem">
+                    <span class="game-icon">🔢</span>
+                    <h3>2048</h3>
+                    <p class="game-desc">Slide and merge tiles to reach the 2048 tile!</p>
+                    <span class="game-tag">Solo</span>
+                </a>
+
+                <a href="wordle/index.html" class="game-card" role="listitem">
+                    <span class="game-icon">🟩🟨</span>
+                    <h3>Wordle</h3>
+                    <p class="game-desc">Guess the 5-letter word in 6 tries with color-coded clues.</p>
+                    <span class="game-tag">Solo</span>
+                </a>
+
+                <a href="breakout/index.html" class="game-card" role="listitem">
+                    <span class="game-icon">🧱</span>
+                    <h3>Breakout</h3>
+                    <p class="game-desc">Bounce the ball to break all the bricks before losing your lives.</p>
+                    <span class="game-tag">Solo</span>
+                </a>
+
+                <a href="sudoku/index.html" class="game-card" role="listitem">
+                    <span class="game-icon">🔠</span>
+                    <h3>Sudoku</h3>
+                    <p class="game-desc">Fill the 9×9 grid so every row, column, and box has 1-9.</p>
+                    <span class="game-tag">Solo</span>
+                </a>
+
+                <a href="chess-clock/index.html" class="game-card" role="listitem">
+                    <span class="game-icon">⏱️</span>
+                    <h3>Chess Clock</h3>
+                    <p class="game-desc">Dual timer for chess and board games with multiple presets.</p>
+                    <span class="game-tag">2 Player</span>
+                </a>
+
+                <a href="checkers/index.html" class="game-card" role="listitem">
+                    <span class="game-icon">🏁</span>
+                    <h3>Checkers</h3>
+                    <p class="game-desc">Classic board game with jumps and king promotions.</p>
+                    <span class="game-tag">vs Computer</span>
+                </a>
+
+                <a href="tetris/index.html" class="game-card" role="listitem">
+                    <span class="game-icon">🟦🟧</span>
+                    <h3>Tetris</h3>
+                    <p class="game-desc">Stack falling tetrominoes and clear lines to score big!</p>
+                    <span class="game-tag">Solo</span>
+                </a>
+
+                <a href="flappy-bird/index.html" class="game-card" role="listitem">
+                    <span class="game-icon">🐦</span>
+                    <h3>Flappy Bird</h3>
+                    <p class="game-desc">Tap to fly through the pipes — how far can you go?</p>
+                    <span class="game-tag">Solo</span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Contribute Section -->
+        <section class="contribute-section">
+            <h2 class="section-title">Contribute</h2>
+            <p class="section-desc">GameBox is open source! Add a new game, fix a bug, or improve the UI — all contributions are welcome.</p>
+            <div class="contribute-steps">
+                <div class="step-card">
+                    <span class="step-number">1</span>
+                    <h4>Fork & Clone</h4>
+                    <p>Fork the repo on GitHub and clone it to your machine.</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">2</span>
+                    <h4>Build a Game</h4>
+                    <p>Create a new folder with <code>index.html</code>, <code>script.js</code>, and <code>style.css</code>.</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">3</span>
+                    <h4>Open a PR</h4>
+                    <p>Push your changes and open a Pull Request. We'll review and merge!</p>
+                </div>
+            </div>
+            <a href="https://github.com/Sai-Uttej-R/GameBox" class="contribute-btn" target="_blank" rel="noopener noreferrer">⭐ Star on GitHub</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with ♥ by the <a href="https://github.com/Sai-Uttej-R/GameBox" target="_blank" rel="noopener noreferrer">GameBox community</a>. Licensed under MIT.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').catch(function () {});
+        }
+    </script>
+</body>
+
+</html>

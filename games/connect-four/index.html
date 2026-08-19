@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Connect Four — drop discs and connect four in a row. 2 Player or vs Computer.">
+    <meta name="theme-color" content="#0f1117">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../code-panel.css">
+    <title>Connect Four — GameBox</title>
+</head>
+<body>
+    <a href="../index.html" class="back-link">← Back to GameBox</a>
+    <div class="game-shell c4-shell">
+        <h1>Connect Four</h1>
+        <div id="mode-selector" class="gb-selector">
+            <button class="gb-btn active" data-mode="pvp">2 Player</button>
+            <button class="gb-btn" data-mode="ai">vs Computer</button>
+        </div>
+        <p id="status" class="gb-status">🔴 Red's turn</p>
+        <div id="board" class="c4-board"></div>
+        <button id="reset-btn" class="gb-btn-solid mt-2">New Game</button>
+        <div class="gb-scoreboard mt-1">
+            <p>🔴 Red: <span id="red-score">0</span></p>
+            <p>🟡 Yellow: <span id="yellow-score">0</span></p>
+        </div>
+    </div>
+
+    <div id="winnerModal" class="gb-modal" role="dialog" aria-modal="true" aria-labelledby="winner-title" tabindex="-1">
+        <div class="gb-modal-content">
+            <h2 id="winner-title">Winner!</h2>
+            <p id="winner-text"></p>
+            <button id="play-again-btn" class="gb-btn-solid">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="../code-panel.js"></script>
+</body>
+</html>

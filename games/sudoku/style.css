@@ -1,0 +1,15 @@
+.sudoku-shell{max-width:440px}
+.sudoku-board{display:inline-grid;grid-template-columns:repeat(9,1fr);gap:0;border:2px solid var(--gb-accent);border-radius:var(--gb-radius-sm);overflow:hidden;margin-bottom:.8rem;width:100%;box-sizing:border-box}
+.sdk-cell{aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:1.15rem;font-weight:600;color:var(--gb-text);background:var(--gb-surface);border:1px solid var(--gb-border);cursor:pointer;transition:background .15s;user-select:none}
+.sdk-cell:hover{background:#252942}
+.sdk-cell.selected{background:rgba(56,178,172,.2);border-color:var(--gb-accent)}
+.sdk-cell.given{color:var(--gb-text);font-weight:700;cursor:default}
+.sdk-cell.user{color:var(--gb-accent)}
+.sdk-cell.error{color:var(--gb-danger)}
+.sdk-cell.border-right{border-right:2px solid var(--gb-accent)}
+.sdk-cell.border-bottom{border-bottom:2px solid var(--gb-accent)}
+.sudoku-numpad{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-bottom:.6rem}
+.num-btn{width:38px;height:38px;border:none;border-radius:var(--gb-radius-sm);background:var(--gb-surface);color:var(--gb-text);font-weight:700;font-size:1rem;cursor:pointer;transition:background .15s}
+.num-btn:hover{background:var(--gb-accent);color:#fff}
+.num-btn.active{background:var(--gb-accent);color:#fff}
+@media(max-width:400px){.sdk-cell{font-size:.95rem}.num-btn{width:32px;height:32px;font-size:.9rem}}

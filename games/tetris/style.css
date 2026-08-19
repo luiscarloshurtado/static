@@ -1,0 +1,11 @@
+.tetris-shell{max-width:460px}
+.tetris-layout{display:flex;gap:1rem;justify-content:center;align-items:flex-start;margin-bottom:.8rem}
+#canvas{display:block;background:#0a0c12;border:1px solid var(--gb-border);border-radius:var(--gb-radius-sm)}
+.tetris-sidebar{display:flex;flex-direction:column;gap:.6rem;min-width:100px}
+.tetris-info{display:flex;flex-direction:column;align-items:center;padding:.4rem .6rem;background:var(--gb-surface);border:1px solid var(--gb-border);border-radius:var(--gb-radius-sm)}
+.info-label{font-size:.7rem;color:var(--gb-text-muted);font-weight:600;text-transform:uppercase}
+.info-value{font-size:1.2rem;font-weight:700;color:var(--gb-text);font-variant-numeric:tabular-nums}
+.next-label{font-size:.75rem;color:var(--gb-text-muted);font-weight:600;text-transform:uppercase;text-align:center;margin:.2rem 0 0}
+#next-canvas{display:block;background:#0a0c12;border:1px solid var(--gb-border);border-radius:var(--gb-radius-sm);margin:0 auto}
+.control-hint{color:var(--gb-text-muted);font-size:.85rem;margin:.6rem 0}
+@media(max-width:420px){#canvas{width:180px;height:360px}.tetris-sidebar{min-width:80px}.info-value{font-size:1rem}#next-canvas{width:72px;height:72px}}

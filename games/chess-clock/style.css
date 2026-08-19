@@ -1,0 +1,12 @@
+.clock-shell{max-width:480px}
+.clock-container{display:flex;gap:1rem;margin:1.2rem 0}
+.clock-face{flex:1;padding:2rem 1rem;border:2px solid var(--gb-border);border-radius:var(--gb-radius);background:var(--gb-surface);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:.5rem;transition:border-color .2s,background .2s}
+.clock-face:hover{border-color:var(--gb-accent)}
+.clock-face.active{border-color:var(--gb-accent);background:rgba(56,178,172,.1)}
+.clock-face.expired{border-color:var(--gb-danger);background:rgba(245,101,101,.1)}
+.clock-label{font-size:.85rem;color:var(--gb-text-muted);font-weight:600}
+.clock-time{font-size:2.5rem;font-weight:700;color:var(--gb-text);font-variant-numeric:tabular-nums}
+.clock-face.active .clock-time{color:var(--gb-accent)}
+.clock-face.expired .clock-time{color:var(--gb-danger)}
+.clock-controls{display:flex;gap:.8rem;justify-content:center}
+@media(max-width:400px){.clock-time{font-size:1.8rem}.clock-face{padding:1.2rem .6rem}}

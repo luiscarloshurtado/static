@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Memory Match — flip cards and find matching pairs. Train your memory with three difficulty levels.">
+    <meta name="theme-color" content="#0f1117">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../code-panel.css">
+    <title>Memory Match — GameBox</title>
+</head>
+
+<body>
+    <a href="../index.html" class="back-link">← Back to GameBox</a>
+    <div class="game-shell mm-shell">
+        <h1>Memory Match</h1>
+        <div id="mm-difficulty" class="gb-selector">
+            <button class="gb-btn active" data-cols="3" data-pairs="6">Easy (3×4)</button>
+            <button class="gb-btn" data-cols="4" data-pairs="8">Medium (4×4)</button>
+            <button class="gb-btn" data-cols="6" data-pairs="12">Hard (6×4)</button>
+        </div>
+        <p id="game-stats" class="gb-status">Moves: 0  |  Best: —</p>
+        <div class="memory-game"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="../code-panel.js"></script>
+</body>
+
+</html>

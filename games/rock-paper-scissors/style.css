@@ -1,0 +1,49 @@
+/* Rock-Paper-Scissors — Game-specific styles */
+
+.rps-arena {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1.2rem 0;
+}
+
+.rps-column {
+    text-align: center;
+}
+
+.rps-column h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gb-text-muted);
+    margin-bottom: 0.8rem;
+}
+
+.rps-btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    min-width: 140px;
+}
+
+.rps-display {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gb-accent);
+    padding: 1rem;
+    border: 2px solid var(--gb-border);
+    border-radius: var(--gb-radius-sm);
+    background: rgba(255, 255, 255, 0.04);
+    min-width: 140px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .rps-arena {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}

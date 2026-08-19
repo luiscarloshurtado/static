@@ -1,0 +1,68 @@
+/* Simon Game — Game-specific styles */
+
+.simon-shell {
+    max-width: 420px;
+}
+
+.simon-shell h1 {
+    font-size: 1.2rem;
+    color: var(--gb-text);
+    margin-bottom: 1.2rem;
+}
+
+.simon-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 1.2rem;
+}
+
+.simon-row {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.simon-btn {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 4px solid var(--gb-border);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.simon-btn:hover {
+    opacity: 0.85;
+}
+
+.simon-btn.red {
+    background-color: #e53e3e;
+}
+
+.simon-btn.green {
+    background-color: #38a169;
+}
+
+.simon-btn.blue {
+    background-color: #3182ce;
+}
+
+.simon-btn.yellow {
+    background-color: #d69e2e;
+}
+
+.simon-btn.pressed {
+    box-shadow: 0 0 18px rgba(56, 178, 172, 0.5);
+    filter: brightness(1.3);
+}
+
+.game-over {
+    background-color: rgba(245, 101, 101, 0.15) !important;
+}
+
+p {
+    color: var(--gb-text-muted);
+}

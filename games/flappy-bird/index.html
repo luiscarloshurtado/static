@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Flappy Bird — tap to fly through the pipes! Part of GameBox.">
+    <meta name="theme-color" content="#0f1117">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../code-panel.css">
+    <title>Flappy Bird — GameBox</title>
+</head>
+<body>
+    <a href="#game" class="skip-link">Skip to game</a>
+    <a href="../" class="back-link" aria-label="Back to GameBox hub">← Back to GameBox</a>
+    <div class="game-shell flappy-shell" id="game">
+        <h1>Flappy Bird</h1>
+        <div class="gb-scoreboard">
+            <div class="score-item"><span class="score-label">Score</span><span class="score-value" id="score">0</span></div>
+            <div class="score-item"><span class="score-label">Best</span><span class="score-value" id="best">0</span></div>
+        </div>
+        <canvas id="canvas" width="320" height="480"></canvas>
+        <p class="control-hint">Click, Tap, or press Space to flap</p>
+        <button class="gb-btn gb-btn-solid" id="start-btn">Start</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="../code-panel.js"></script>
+</body>
+</html>

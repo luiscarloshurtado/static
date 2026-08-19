@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Play Simon — repeat the color sequence and test your memory. How far can you go?">
+  <meta name="theme-color" content="#0f1117">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../common.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../code-panel.css">
+  <title>Simon Game — GameBox</title>
+</head>
+
+<body>
+  <a href="../index.html" class="back-link">← Back to GameBox</a>
+  <div class="game-shell simon-shell">
+    <h1 id="level-title">Press Start to Play</h1>
+    <div class="simon-board">
+      <div class="simon-row">
+        <div type="button" id="green" class="simon-btn green" onclick="handleButtonClick()"></div>
+        <div type="button" id="red" class="simon-btn red" onclick="handleButtonClick()"></div>
+      </div>
+      <div class="simon-row">
+        <div type="button" id="yellow" class="simon-btn yellow" onclick="handleButtonClick()"></div>
+        <div type="button" id="blue" class="simon-btn blue" onclick="handleButtonClick()"></div>
+      </div>
+    </div>
+    <button id="start-button" class="gb-btn-solid mt-2" onclick="startGame()">Start Game</button>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="game.js" charset="utf-8"></script>
+  <script src="../code-panel.js"></script>
+</body>
+
+</html>

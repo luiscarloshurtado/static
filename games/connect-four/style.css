@@ -1,0 +1,59 @@
+/* Connect Four — Styles */
+.c4-shell {
+    max-width: 520px;
+}
+
+.c4-board {
+    display: inline-grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+    background: rgba(56, 178, 172, 0.1);
+    border: 2px solid var(--gb-border);
+    border-radius: var(--gb-radius);
+    padding: 10px;
+}
+
+.c4-cell {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    border: 2px solid var(--gb-border);
+    cursor: pointer;
+    transition: all var(--gb-transition);
+}
+
+.c4-cell:hover {
+    border-color: var(--gb-accent);
+    background: rgba(56, 178, 172, 0.15);
+}
+
+.c4-cell.red {
+    background: #f56565;
+    border-color: #f56565;
+}
+
+.c4-cell.yellow {
+    background: #ecc94b;
+    border-color: #ecc94b;
+}
+
+.c4-cell.winning {
+    animation: pulse 0.5s ease infinite alternate;
+}
+
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
+
+@media (max-width: 450px) {
+    .c4-cell {
+        width: 36px;
+        height: 36px;
+    }
+    .c4-board {
+        gap: 4px;
+        padding: 6px;
+    }
+}

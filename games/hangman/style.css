@@ -1,0 +1,164 @@
+/* Hangman — Game-specific styles */
+
+.word-display {
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 1.2rem;
+    color: var(--gb-text);
+}
+
+.alphabet-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 0.8rem;
+}
+
+.alphabet-letter {
+    font-size: 0.95rem;
+    padding: 6px 10px;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--gb-text);
+    border: 1px solid var(--gb-border);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all var(--gb-transition);
+    font-family: var(--gb-font);
+}
+
+.alphabet-letter:hover {
+    background: rgba(56, 178, 172, 0.15);
+    border-color: var(--gb-accent);
+}
+
+.alphabet-letter.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+    cursor: default;
+}
+
+.alphabet-letter.correct {
+    background: rgba(72, 187, 120, 0.2);
+    border-color: var(--gb-success);
+    color: var(--gb-success);
+}
+
+.alphabet-letter.wrong {
+    background: rgba(245, 101, 101, 0.2);
+    border-color: var(--gb-danger);
+    color: var(--gb-danger);
+}
+
+/* Hangman figure */
+.hangman-figure {
+    position: relative;
+    width: 140px;
+    height: 180px;
+    margin: 0 auto 1rem;
+}
+
+.hm-gallows {
+    position: absolute;
+    bottom: 0; left: 20px;
+    width: 100px; height: 4px;
+    background: var(--gb-text-muted);
+    border-radius: 2px;
+}
+
+.hm-gallows::before {
+    content: '';
+    position: absolute;
+    left: 20px; bottom: 0;
+    width: 4px; height: 160px;
+    background: var(--gb-text-muted);
+    border-radius: 2px;
+}
+
+.hm-gallows::after {
+    content: '';
+    position: absolute;
+    left: 20px; bottom: 156px;
+    width: 60px; height: 4px;
+    background: var(--gb-text-muted);
+    border-radius: 2px;
+}
+
+.hm-head {
+    position: absolute;
+    top: 24px; left: 72px;
+    width: 28px; height: 28px;
+    border: 3px solid var(--gb-accent);
+    border-radius: 50%;
+}
+
+.hm-body {
+    position: absolute;
+    top: 55px; left: 84px;
+    width: 3px; height: 45px;
+    background: var(--gb-accent);
+}
+
+.hm-arm-left {
+    position: absolute;
+    top: 62px; left: 58px;
+    width: 28px; height: 3px;
+    background: var(--gb-accent);
+    transform: rotate(30deg);
+}
+
+.hm-arm-right {
+    position: absolute;
+    top: 62px; left: 86px;
+    width: 28px; height: 3px;
+    background: var(--gb-accent);
+    transform: rotate(-30deg);
+}
+
+.hm-leg-left {
+    position: absolute;
+    top: 97px; left: 65px;
+    width: 3px; height: 35px;
+    background: var(--gb-accent);
+    transform: rotate(20deg);
+}
+
+.hm-leg-right {
+    position: absolute;
+    top: 97px; left: 86px;
+    width: 3px; height: 35px;
+    background: var(--gb-accent);
+    transform: rotate(-20deg);
+}
+
+.hm-foot-left {
+    position: absolute;
+    top: 128px; left: 50px;
+    width: 16px; height: 3px;
+    background: var(--gb-accent);
+}
+
+.hm-foot-right {
+    position: absolute;
+    top: 128px; left: 90px;
+    width: 16px; height: 3px;
+    background: var(--gb-accent);
+}
+
+.keyboard-hint {
+    font-size: 0.8rem;
+    color: var(--gb-text-muted);
+    opacity: 0.6;
+    margin-top: 0.5rem;
+}
+
+.word-display.reveal {
+    color: var(--gb-danger);
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-6px); }
+    40%, 80% { transform: translateX(6px); }
+}
