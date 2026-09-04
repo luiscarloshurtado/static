@@ -1,1 +1,3 @@
-Go.do("nav:start");
+window.addEventListener("load", () => {
+  Go.do("nav:start");
+});
