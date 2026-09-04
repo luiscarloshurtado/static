@@ -1,1 +1,3 @@
-Go.set("home:route", function () {});
+Go.set("home:route", function () {
+  return Go.create({});
+});

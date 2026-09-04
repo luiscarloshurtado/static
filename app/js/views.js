@@ -7,7 +7,7 @@ Go.views({
     routes: {
       "/*": {
         name: "home",
-        fn: () => Go.do("home:init"),
+        fn: () => Go.do("home:route"),
       },
     },
   },
