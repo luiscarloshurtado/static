@@ -1,5 +1,5 @@
 Go.views({
-  "/app/games/*": {
+  "/*": {
     name: "home",
     html: "/app/html/home.html",
     target: ".app.body",
