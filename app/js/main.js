@@ -1,0 +1,1 @@
+Go.do("nav:start");
