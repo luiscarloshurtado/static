@@ -1,3 +1,4 @@
+import "./views.js";
 import "./home.js";
 
 window.addEventListener("load", () => {

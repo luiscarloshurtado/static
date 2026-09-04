@@ -1,11 +1,14 @@
-Go.set("nav:start", function () {
-  return Go.do("nav:push");
-});
-
-Go.set("nav:push", function () {
-  return Go.switch({
-    case: location.pathname,
-    default: () => Go.do("home:route"),
-    "/": () => Go.do("home:route"),
-  });
+Go.views({
+  "/*": {
+    name: "home",
+    html: "/app/html/home.html",
+    target: ".app.body",
+    title: `${Go.lang("app_name")} - ${Go.lang("app_description")}`,
+    routes: {
+      "/*": {
+        name: "home",
+        fn: () => Go.do("home:route"),
+      },
+    },
+  },
 });
