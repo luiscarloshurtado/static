@@ -38,6 +38,11 @@ html {
   flex-direction: column;
 }
 
+.appIcon :is(.name) {
+  font-size: 120%;
+  margin: 0 0 calc(var(--gap) * 0.5) 0;
+}
+
 .appIcon :is(.name, .description) {
   line-height: var(--line-height);
 }
