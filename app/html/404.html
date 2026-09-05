@@ -1,0 +1,13 @@
+<div nav-animate class="main error404" style="height: 100vh" flex-center gap>
+  <div tcenter animation="fadeIn">
+    <div class="logo" img circle style="--size: 200px; --img: url(${Go.config('appIcon')}); filter: grayscale(100%); --size-mbl: 120px" opacity="0.5"></div>
+    <go-spacer num="2"></go-spacer>
+    <h4 class="num404" font-gradient fw900 f250>404</h4>
+    <h1 opacity="0.6">${Go.lang('404_message')}</h1>
+    <go-spacer num="2"></go-spacer>
+    <a class="primary-button" href="${Go.base()}" onclick="{{Go.config('homeButtonEvent')}}" primary-gradient>
+      <go-icon name="home"></go-icon>
+      <span>${Go.lang(Go.config('homeButtonLabel') || 'home')}</span>
+    </a>
+  </div>
+</div>

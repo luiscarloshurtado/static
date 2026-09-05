@@ -11,4 +11,10 @@ Go.views({
       },
     },
   },
+  404: {
+    title: Go.lang("404"),
+    target: ".body",
+    html: "/app/html/404.html",
+    name: "404",
+  },
 });
