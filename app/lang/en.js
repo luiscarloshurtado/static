@@ -12,4 +12,5 @@ export default {
   news: "News",
   news_description: "Stay up to date with the latest news from Luigi OS.",
   go_sdk_description: "Our JavaScript development library for creating applications for all devices.",
+  "404_message": "The page you are looking for does not exist.",
 };
