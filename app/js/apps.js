@@ -28,7 +28,7 @@ Go.set("apps:app", function (app, index) {
     href: Go.getProp(app, "src", `/app/${Go.getProp(app, "name")}`),
     target: "_blank",
     childrens: [
-      { tag: "picture", class: "icon" },
+      { tag: "picture", class: "icon", style: { "--icon": `url(${Go.getProp(app, "icon")})` } },
       { tag: "div", class: "name", html: Go.getProp(app, "name") },
     ],
     animation: {
