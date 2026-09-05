@@ -8,4 +8,13 @@
   --third-color: #0498fb;
   --light: #f5f5f5;
   --dark: #000000;
+  --border-radius: calc(var(--gap) * 1.5);
+}
+
+.mainMenu {
+  margin: auto;
+  padding: var(--gap);
+  display: grid;
+  grid-template-columns: repeat((3, 1fr));
+  gap: var(--gap);
 }

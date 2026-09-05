@@ -3,7 +3,7 @@ Go.set("apps:list", function () {
     {
       name: Go.lang("operative_system"),
       icon: "/app/img/icons/512x512.png",
-      src: "https://www.luigios.com/app/luigios/",
+      src: "https://www.luigios.com/app/desktop/",
       description: Go.lang("operative_system_description"),
     },
     {
