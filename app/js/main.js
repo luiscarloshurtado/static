@@ -1,3 +1,4 @@
+import "./icons.js";
 import "./views.js";
 import "./apps.js";
 import "./home.js";
