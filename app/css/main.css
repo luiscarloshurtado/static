@@ -41,6 +41,10 @@ html {
   overflow: hidden;
 }
 
+.mainMenu .appIcon:first-child {
+  grid-column: span 2;
+}
+
 .appIcon:active {
   opacity: 0.5;
 }

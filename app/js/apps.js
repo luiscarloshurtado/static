@@ -18,6 +18,18 @@ Go.set("apps:list", function () {
       src: "https://www.luigios.com/app/desktop/",
       description: Go.lang("apps_description"),
     },
+    {
+      name: Go.lang("news"),
+      icon: "/app/img/all/news.png",
+      src: "https://www.luigios.com/app/news/",
+      description: Go.lang("news_description"),
+    },
+    {
+      name: Go.lang("sdk"),
+      icon: "/app/img/all/go.png",
+      src: "https://www.luigios.com/app/go-sdk/",
+      description: Go.lang("go_sdk_description"),
+    },
   ];
 });
 

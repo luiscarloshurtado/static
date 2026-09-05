@@ -8,4 +8,8 @@ export default {
   operative_system_description: "Is a cloud-based operating system designed for productivity and speed. Access your apps from anywhere.",
   games_description: "Play games from anywhere, on any device, with the power of Luigi OS. Experience the future of online gaming.",
   apps_description: "Access your apps from anywhere, on any device, with the power of Luigi OS. Experience the future of online gaming.",
+  sdk: "SDK",
+  news: "News",
+  news_description: "Stay up to date with the latest news from Luigi OS.",
+  go_sdk_description: "Our JavaScript development library for creating applications for all devices.",
 };
