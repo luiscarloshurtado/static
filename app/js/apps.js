@@ -33,8 +33,8 @@ Go.set("apps:app", function (app, index) {
     ],
     animation: {
       delay: 50 * index,
-      from: { opacity: 0, transform: "translateX(50px)" },
-      to: { opacity: 1, transform: "translateX(0)" },
+      from: { opacity: 0, transform: "translateX(50px) scale(1.5)" },
+      to: { opacity: 1, transform: "translateX(0) scale(1)" },
     },
   };
 });
