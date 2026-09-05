@@ -59,6 +59,20 @@ html {
   line-height: var(--line-height);
 }
 
+.appIcon picture {
+  display: flex;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  position: relative;
+  width: 76px;
+  height: 76px;
+  background-image: var(--icon);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 768px) {
   .mainMenu {
     grid-template-columns: repeat(3, 1fr);
