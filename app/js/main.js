@@ -8,7 +8,7 @@ const lang = Go.if({
 });
 
 window.addEventListener("load", () => {
-  Go.import(`/app/lang/${lang}/.js`, (module) => {
+  Go.import(`/app/lang/${lang}.js`, (module) => {
     Go.lang(module);
     Go.do("nav:start");
   });
