@@ -12,7 +12,7 @@ Go.views({
     },
   },
   404: {
-    title: Go.lang("404"),
+    title: () => Go.lang("404_not_found"),
     target: ".body",
     html: "/app/html/404.html",
     name: "404",
