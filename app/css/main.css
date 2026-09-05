@@ -14,6 +14,7 @@
   --primary-gradient: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.2) 0%, transparent 40%), linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   --secondary-gradient: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.2) 0%, transparent 40%), linear-gradient(135deg, var(--secondary-color), var(--primary-color));
   --text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  --app-icon-size: 76px;
 }
 
 body,
@@ -69,12 +70,13 @@ html {
   border-radius: var(--border-radius);
   overflow: hidden;
   position: relative;
-  width: 76px;
-  height: 76px;
+  width: var(--app-icon-size);
+  height: var(--app-icon-size);
   background-image: var(--icon);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin: 0 0 var(--gap) 0;
 }
 
 @media (min-width: 768px) {
