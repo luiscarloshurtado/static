@@ -87,3 +87,9 @@ html {
     padding: calc(var(--gap) * 1.5);
   }
 }
+
+@media (min-width: 1024px) {
+  .appIcon picture {
+    --app-icon-size: 96px;
+  }
+}
