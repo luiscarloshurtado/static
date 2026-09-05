@@ -1,4 +1,5 @@
 import "./views.js";
+import "./apps.js";
 import "./home.js";
 
 const lang = Go.if({
