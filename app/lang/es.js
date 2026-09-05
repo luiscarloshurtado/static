@@ -10,7 +10,7 @@ export default {
   apps_description: "Accede a tus apps desde cualquier lugar, en cualquier dispositivo, con la potencia de Luigi OS. Experimenta el futuro de la online gaming.",
   sdk: "SDK",
   news: "Noticias",
-  news_description: "Mantente al tanto de las últimas noticias de Luigi OS.",
+  news_description: "Mantente al tanto de las últimas noticias de Luigi OS y del mundo en general.",
   go_sdk_description: "Nuestra librería de desarrollo de JavaScript para crear aplicaciones para todos los dispositivos.",
   "404_message": "La página que estás buscando no existe.",
   home: "Inicio",
