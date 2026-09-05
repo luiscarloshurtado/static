@@ -10,6 +10,10 @@
   --dark: #000000;
   --border-radius: calc(var(--gap) * 1.5);
   --body-background: #fff;
+  --line-height: 1.1;
+  --primary-gradient: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.2) 0%, transparent 40%), linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  --secondary-gradient: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.2) 0%, transparent 40%), linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+  --text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 body,
@@ -35,5 +39,5 @@ html {
 }
 
 .appIcon :is(.name, .description) {
-  line-height: 1.1;
+  line-height: var(--line-height);
 }
