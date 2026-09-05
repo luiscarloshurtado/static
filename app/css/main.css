@@ -41,3 +41,7 @@ html {
 .appIcon :is(.name, .description) {
   line-height: var(--line-height);
 }
+
+.appIcon :is(.description) {
+  font-size: 85%;
+}

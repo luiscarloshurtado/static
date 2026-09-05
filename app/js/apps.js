@@ -30,6 +30,7 @@ Go.set("apps:app", function (app, index) {
     childrens: [
       { tag: "picture", class: "icon", style: { "--icon": `url(${Go.getProp(app, "icon")})` } },
       { tag: "div", class: "name", html: Go.getProp(app, "name") },
+      { tag: "div", class: "description", html: Go.getProp(app, "description") },
     ],
     animation: {
       delay: 50 * index,
