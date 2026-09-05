@@ -20,3 +20,21 @@ Go.set("apps:list", function () {
     },
   ];
 });
+
+Go.set("apps:app", function (app, index) {
+  return {
+    tag: "a",
+    class: "app",
+    href: Go.getProp(app, "src", `/app/${Go.getProp(app, "name")}`),
+    target: "_blank",
+    childrens: [
+      { tag: "picture", class: "icon" },
+      { tag: "div", class: "name", html: Go.getProp(app, "name") },
+    ],
+    animation: {
+      delay: 50 * index,
+      from: { opacity: 0, transform: "translateX(50px)" },
+      to: { opacity: 1, transform: "translateX(0)" },
+    },
+  };
+});

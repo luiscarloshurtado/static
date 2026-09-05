@@ -3,18 +3,6 @@ Go.set("home:route", function () {
     tag: "main",
     class: "mainMenu",
     target: ".app.body",
-    childrens: Go.do("apps:list").map((app) => ({
-      tag: "a",
-      class: "app",
-      href: Go.getProp(app, "src", `/app/${Go.getProp(app, "name")}`),
-      target: "_blank",
-      childrens: [
-        {
-          tag: "div",
-          class: "name",
-          html: Go.getProp(app, "name"),
-        },
-      ],
-    })),
+    childrens: Go.do("apps:list").map((app, index) => Go.do("apps:app", app, index)),
   });
 });
