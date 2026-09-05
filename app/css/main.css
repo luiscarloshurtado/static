@@ -1,4 +1,5 @@
 :root {
   --gap: 1rem;
   --rounded-corners: calc(var(--gap, 1rem) * 1.5);
+  --primary-color: #0456fb;
 }
