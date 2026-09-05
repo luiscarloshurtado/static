@@ -36,6 +36,9 @@ html {
   padding: calc(var(--gap) * 1.5);
   background-color: var(--secondary-color);
   flex-direction: column;
+  border-radius: var(--border-radius);
+  position: relative;
+  overflow: hidden;
 }
 
 .appIcon :is(.name) {
@@ -43,10 +46,16 @@ html {
   margin: 0 0 calc(var(--gap) * 0.5) 0;
 }
 
+.appIcon :is(.description) {
+  font-size: 85%;
+}
+
 .appIcon :is(.name, .description) {
   line-height: var(--line-height);
 }
 
-.appIcon :is(.description) {
-  font-size: 85%;
+@media (min-width: 768px) {
+  .mainMenu {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

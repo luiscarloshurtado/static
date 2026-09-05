@@ -6,4 +6,6 @@ export default {
   apps: "Aplicaciones",
   games: "Juegos",
   operative_system_description: "Es un sistema operativo 100% en la nube diseñado para productividad y velocidad. Accede a tus apps desde cualquier lugar.",
+  games_description: "Juega juegos desde cualquier lugar, en cualquier dispositivo, con la potencia de Luigi OS. Experimenta el futuro de la online gaming.",
+  apps_description: "Accede a tus apps desde cualquier lugar, en cualquier dispositivo, con la potencia de Luigi OS. Experimenta el futuro de la online gaming.",
 };
