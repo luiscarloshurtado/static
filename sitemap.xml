@@ -4,6 +4,7 @@
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
+<url>
 <loc>https://www.luigios.com/app/cloud/</loc>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -13,6 +14,7 @@
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
+<url>
 <loc>https://www.luigios.com/app/games/</loc>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
