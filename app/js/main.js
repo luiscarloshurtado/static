@@ -3,6 +3,8 @@ import "./views.js";
 import "./apps.js";
 import "./home.js";
 
+Go.component("app-header", "/app/components/app-header.js");
+
 window.addEventListener("load", () => {
   const lang = Go.if({
     cond: () => ["en", "es"].includes(Go.lang().current()),
