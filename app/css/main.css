@@ -92,7 +92,7 @@ app-header {
   z-index: 1;
   display: flex;
   background: linear-gradient(180deg, var(--body-background), transparent);
-  margin: 0 0 auto 0;
+  margin: 0 0 0 0;
 }
 
 app-header .contain {
