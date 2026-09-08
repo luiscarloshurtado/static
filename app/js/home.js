@@ -23,7 +23,7 @@ Go.set("home:menu", function () {
     options: [
       {
         label: Go.lang("language"),
-        fn: () => Go.src("/app/js/").language(),
+        fn: () => Go.do("language:select"),
       },
     ],
   }));

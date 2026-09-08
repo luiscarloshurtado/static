@@ -1,5 +1,3 @@
-export default { init: () => Go.do("language:select") };
-
 Go.cssTag(
   "language",
   `.menu.language {

@@ -23,7 +23,7 @@ export default {
             {
               tag: "go-button",
               icon: "globe",
-              onclick: () => Go.src("/app/js/").language(),
+              onclick: () => Go.do("language:select"),
             },
             {
               tag: "go-button",

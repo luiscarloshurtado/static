@@ -118,7 +118,9 @@ app-header .appName {
   padding: var(--gap);
 }
 
-app-header
+app-header go-button:hover {
+  color: var(--primary-color);
+}
 
 @media (min-width: 768px) {
   .mainMenu {
