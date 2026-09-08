@@ -25,6 +25,7 @@ html {
 .mainBody {
   display: flex;
   flex-direction: column;
+  flex: auto;
 }
 
 .mainMenu {
