@@ -22,6 +22,11 @@ html {
   background-color: var(--body-background);
 }
 
+.mainBody {
+  display: flex;
+  flex-direction: column;
+}
+
 .mainMenu {
   margin: auto;
   padding: var(--gap);
@@ -78,6 +83,38 @@ html {
   background-repeat: no-repeat;
   filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.25));
   margin: 0 0 var(--gap) 0;
+}
+
+app-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  background: linear-gradient(180deg, var(--body-background), transparent);
+  margin: 0 0 auto 0;
+}
+
+app-header .contain {
+  display: flex;
+  justify-content: space-between;
+}
+
+app-header .left,
+app-header .right {
+  display: flex;
+  gap: var(--gap);
+}
+
+app-header .left {
+  justify-content: flex-start;
+}
+
+app-header .right {
+  justify-content: flex-end;
+}
+
+app-header .appName {
+  padding: var(--gap);
 }
 
 @media (min-width: 768px) {

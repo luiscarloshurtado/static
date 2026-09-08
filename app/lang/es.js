@@ -14,4 +14,5 @@ export default {
   go_sdk_description: "Nuestra librería de desarrollo de JavaScript para crear aplicaciones para todos los dispositivos.",
   "404_message": "La página que estás buscando no existe.",
   home: "Inicio",
+  language: "Idioma",
 };

@@ -5,4 +5,5 @@ Go.env({
   app_description: "The Cloud OS",
   app_domain: "www.luigios.com",
   app_icon: "/app/img/icons/512x512.png",
+  company_name: "HYPERCLOUD",
 });
