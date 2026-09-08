@@ -97,16 +97,17 @@ app-header {
 app-header .contain {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 app-header .left,
 app-header .right {
   display: flex;
-  gap: var(--gap);
 }
 
 app-header .left {
   justify-content: flex-start;
+  gap: var(--gap);
 }
 
 app-header .right {
@@ -116,6 +117,8 @@ app-header .right {
 app-header .appName {
   padding: var(--gap);
 }
+
+app-header
 
 @media (min-width: 768px) {
   .mainMenu {
