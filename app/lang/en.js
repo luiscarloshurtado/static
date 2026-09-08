@@ -15,4 +15,5 @@ export default {
   "404_message": "The page you are looking for does not exist.",
   home: "Home",
   language: "Language",
+  select_language: "Select Language",
 };
