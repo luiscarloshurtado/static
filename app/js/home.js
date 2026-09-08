@@ -20,6 +20,7 @@ Go.set("home:menu", function () {
   return (this.menu = Go.menu({
     icon: Go.config("appIcon"),
     title: Go.env("company_name"),
+    closeOutside: true,
     options: [
       {
         label: Go.lang("language"),

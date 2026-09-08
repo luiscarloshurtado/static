@@ -116,6 +116,7 @@ app-header .right {
 
 app-header .appName {
   padding: var(--gap);
+  letter-spacing: calc(var(--gap) * 0.5);
 }
 
 app-header go-button:hover {
