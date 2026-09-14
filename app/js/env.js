@@ -6,4 +6,5 @@ Go.env({
   app_domain: "www.luigios.com",
   app_icon: "/app/img/icons/512x512.png",
   company_name: "HYPERCLOUD",
+  company_caligraphy: "HYPΞRCLOUD",
 });
