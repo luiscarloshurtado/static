@@ -12,7 +12,7 @@ export default {
             {
               tag: "div",
               class: "appName",
-              html: Go.env("company_caligraphy"),
+              html: Go.create_tags(Go.env("company_caligraphy").split("").join(" ")),
             },
           ],
         },

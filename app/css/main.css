@@ -119,6 +119,12 @@ app-header .appName {
   padding: var(--gap);
   letter-spacing: calc(var(--gap) * 0.5);
   font-weight: bold;
+  font-size: 150%;
+  white-space: nowrap;
+}
+
+app-header .appName :nth-child(4) {
+  color: var(--primary-color);
 }
 
 app-header go-button:hover {
